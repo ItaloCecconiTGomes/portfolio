@@ -1,0 +1,77 @@
+*{ /* Tudo que estiver dentro do *{} será aplicado para a página toda*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{ /*Raiz do css*/
+    --primaria: #4f46e5; /*Ao colocar --nome vc define uma variavel que pode ser chamada em outras partes do codigo*/
+    --secundaria: #7c3aed;
+    --escuro: #0f172a;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
+}
+
+body{
+    background-color: var(--escuro);
+    color: var(--claro);
+}
+
+.navegacao{ /*classe coloca um . no inicio*/
+    position: fixed;
+    top: 0;
+    background-color: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100; /*define quem fica na frente*/
+    padding: 1.5rem; /*espeçamento interno*/
+}
+
+.menu{
+   display: flex;
+   list-style: none;
+   gap: 3rem;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link::after{ /*colocando after e before eh possivel inserir coisas antes e depois dos textos*/
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(80deg, var(--primaria),var(--secundaria));
+    transition: width 0.5s ease; /*faz a barra inferior do menu aparecer suavemente*/
+}
+
+.menu-link:hover::after{ /*hover eh para realizar a ação somente quando passar o mouse por cima*/
+    width: 100%;
+}
+
+.cabecalho{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foto-perfil{
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 4px solid var(--vidro);
+}

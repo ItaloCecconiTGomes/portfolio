@@ -3,33 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Portfolio</title>
 </head>
 <body>
     <nav class="navegacao">
         <ul class="menu">
             <li>
-                <a href="#inicio">Início</a> //#inicio eh usado para direcionar o usuario para a a parte da pagina que tem o inicio 
+                <a href="#inicio" class="menu-link">Início</a> <!--inicio eh usado para direcionar o usuario para a a parte da pagina que tem o inicio -->
             </li>
             <li>
-                <a href="#sobre">Sobre</a>
+                <a href="#sobre" class="menu-link">Sobre</a>
             </li>
             <li>
-                <a href="#projetos">Projetos</a>
+                <a href="#projetos" class="menu-link">Projetos</a>
             </li>
             <li>
-                <a href="#contato">Contato</a>
+                <a href="#contato" class="menu-link">Contato</a>
             </li>
 
         </ul>
     </nav>
 
     <main id="inicio" class="cabecalho">
-        <div>
-            <img src="./img/italoPortfolio.jpg" alt="Foto de Ítalo Cecconi" class="foto-perfil">
-            <h1>Ítalo Cecconi</h1>
-            <p>Desenvolvedor Full Stack</p>
-        </div>
+        <img src="./img/italoPortfolio.jpg" alt="Foto de Ítalo Cecconi" class="foto-perfil">
+        <h1>Ítalo Cecconi</h1>
+        <p>Desenvolvedor Full Stack</p>
     </main>
 
     <section id="sobre" class="sobre">
@@ -40,5 +39,41 @@
             </p>
         </div>
     </section>
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./img/horizonte.jfif" alt="Projeto 1" class="projetos-imagem">
+                <h3 class="info-projetos">Teste1</h3>
+                <p class="paragrafo-projetos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, molestiae, voluptas autem vel necessitatibus nihil animi ullam doloribus accusamus adipisci aliquam vitae rerum tempora, iste ipsa nemo laudantium. Nesciunt, beatae.</p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/horizonte.jfif" alt="Projeto 1" class="projetos-imagem">
+                <h3 class="info-projetos">Teste2</h3>
+                <p class="paragrafo-projetos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, molestiae, voluptas autem vel necessitatibus nihil animi ullam doloribus accusamus adipisci aliquam vitae rerum tempora, iste ipsa nemo laudantium. Nesciunt, beatae.</p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/horizonte.jfif" alt="Projeto 1" class="projetos-imagem">
+                <h3 class="info-projetos">Teste3</h3>
+                <p class="paragrafo-projetos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, molestiae, voluptas autem vel necessitatibus nihil animi ullam doloribus accusamus adipisci aliquam vitae rerum tempora, iste ipsa nemo laudantium. Nesciunt, beatae.</p>
+            </div> 
+
+        </div>
+    </section id="contatos" class="contatos">
+        <h2 class="contatos-caixa">
+        <form class="formulario-contato" id="formulario"></form>
+            <div class="nome-form">
+                <input placeholder="Nome" class="campo-form">
+            </div>
+            <div class="grupo-form">
+                <textarea class="text-form" placeholder="Digite sua Mensagem"></textarea>
+            </div>
+        </h2>
+    <section>
+
+    </section>
+
 </body>
 </html>
